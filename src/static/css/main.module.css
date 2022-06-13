@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+
+.container{
+
+}
+
+.gallery{
+    display: flex;
+
+    transition: all .5s ease-in-out;
+}
+
+.gallery img{
+    display: block;
+    min-height: 100vh;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery .img{
+    width: calc(100% / 5);
+
+    position: relative;
+    filter: brightness(.65);
+
+    transition: all .5s ease-in-out;
+}
+
+.gallery .img:nth-of-type(1):hover{
+    width: calc(100% / 2.5);
+    filter: brightness(1);}
+
+.gallery .img:nth-of-type(2):hover{
+    width: calc(100% / 2.5);
+    filter: brightness(1);
+}
+
+.gallery .img:nth-of-type(3):hover{
+    width: calc(100% / 2.5);
+    filter: brightness(1);
+}
+
+.gallery .img:nth-of-type(4):hover{
+    width: calc(100% / 2.5);
+    filter: brightness(1);
+}
+
+.gallery .img:nth-of-type(5):hover{
+    width: calc(100% / 2.5);
+    filter: brightness(1);
+}
+
+.gallery h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #fafafa;
+    text-shadow: 0 0 60px rgba(0, 0, 0, .5), 0 0 50px rgba(255, 0, 0, 1), 0 0 40px rgba(255, 255, 0, 1), 0 0 30px rgba(0, 0, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 10px rgba(0, 255, 0, 1), 0 0 5px rgba(255, 255, 255, 1);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    .gallery{
+        flex-wrap: wrap;
+    }
+
+    .gallery .img{
+        width: 100%;
+    }
+
+    .gallery img{
+        max-height: 20vh;
+        min-height: 15vh;
+
+        transition: all .5s ease-in-out;
+    }
+
+    /*.gallery .img:nth-of-type(n):not(:hover){*/
+    /*    max-height: 15vh;*/
+    /*    min-height: 15vh;*/
+    /*}*/
+
+    .gallery .img:nth-of-type(1):hover{
+        width: 100%;
+        max-height: 20vh;
+    }
+
+    /*.gallery .img:nth-of-type(1):hover img{*/
+    /*    min-height: 40vh;*/
+    /*}*/
+
+    .gallery .img:nth-of-type(2):hover{
+        width: 100%;
+        max-height: 20vh;
+    }
+
+    /*.gallery .img:nth-of-type(2):hover img{*/
+    /*    min-height: 40vh;*/
+    /*}*/
+
+    .gallery .img:nth-of-type(3):hover{
+        width: 100%;
+        max-height: 20vh;
+    }
+
+    /*.gallery .img:nth-of-type(3):hover img{*/
+    /*    min-height: 40vh;*/
+    /*}*/
+
+    .gallery .img:nth-of-type(4):hover{
+        width: 100%;
+        max-height: 20vh;
+    }
+
+    /*.gallery .img:nth-of-type(4):hover img{*/
+    /*    min-height: 40vh;*/
+    /*}*/
+
+    .gallery .img:nth-of-type(5):hover{
+        width: 100%;
+        max-height: 20vh;
+    }
+
+    /*.gallery .img:nth-of-type(5):hover img{*/
+    /*    min-height: 40vh;*/
+    /*}*/
+}

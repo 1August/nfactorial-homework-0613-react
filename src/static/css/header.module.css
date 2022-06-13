@@ -1,0 +1,136 @@
+header{
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(-90%);
+
+    padding: 1rem 0;
+
+    background-color: #333;
+    color: #fafafa;
+    /*opacity: 0;*/
+
+    transition: all .5s ease-in-out;
+}
+
+header:hover{
+    animation: headerHover .5s alternate;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+header a{
+    color: #fafafa;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    position: relative;
+}
+
+header a:hover::before{
+
+}
+
+.brand{
+    width: calc(70% - 2rem);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    /*flex-wrap: wrap;*/
+}
+
+.logo{
+    width: calc(15% - 1.5rem);
+    padding: .5rem;
+
+    /*background-color: #d5d5d5;*/
+    /*border-radius: 0 30px 0 30px;*/
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, .3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+
+    border-radius: inherit;
+    border: inherit;
+}
+
+header nav{
+    width: calc(85% - 1.5rem);
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.date{
+    width: calc(30% - 2rem);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.date h1{
+    text-align: end;
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    header {
+        padding: 2.2rem 0;
+        transform: translateY(-70%);
+    }
+
+    .brand{
+        width: 100%;
+    }
+
+    header nav{
+        width: 100%;
+        padding-top: .5rem;
+    }
+
+    header ul{
+        justify-content: space-between;
+        gap: 2rem 1rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .date{
+        display: none;
+    }
+}
