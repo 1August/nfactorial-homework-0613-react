@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     z-index: 3;
     left: 0;
@@ -15,13 +15,13 @@ header{
     transition: all .5s ease-in-out;
 }
 
-header:hover{
+header:hover {
     animation: headerHover .5s alternate;
     opacity: 1;
     transform: translateY(0);
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@ header:hover{
     flex-wrap: wrap;
 }
 
-header a{
+header a {
     color: #fafafa;
     text-decoration: none;
 
@@ -37,26 +37,19 @@ header a{
     position: relative;
 }
 
-header a:hover::before{
-
-}
-
-.brand{
+.brand {
     width: calc(70% - 2rem);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
-    /*flex-wrap: wrap;*/
 }
 
-.logo{
+.logo {
     width: calc(15% - 1.5rem);
     padding: .5rem;
 
-    /*background-color: #d5d5d5;*/
-    /*border-radius: 0 30px 0 30px;*/
     aspect-ratio: 1;
     border-radius: 100%;
     border: 2px solid rgba(255, 255, 255, .3);
@@ -66,13 +59,12 @@ header a:hover::before{
     align-items: center;
 }
 
-.logo img{
-
+.logo img {
     border-radius: inherit;
     border: inherit;
 }
 
-header nav{
+header nav {
     width: calc(85% - 1.5rem);
 }
 
@@ -88,7 +80,7 @@ header ul {
     flex-wrap: wrap;
 }
 
-.date{
+.date {
     width: calc(30% - 2rem);
 
     display: flex;
@@ -96,13 +88,13 @@ header ul {
     align-items: center;
 }
 
-.date h1{
+.date h1 {
     text-align: end;
 }
 
 
-@media screen and (max-width: 768px){
-    .container{
+@media screen and (max-width: 768px) {
+    .container {
         flex-direction: column;
         gap: .5rem;
     }
@@ -112,25 +104,25 @@ header ul {
         transform: translateY(-70%);
     }
 
-    .brand{
+    .brand {
         width: 100%;
     }
 
-    header nav{
+    header nav {
         width: 100%;
         padding-top: .5rem;
     }
 
-    header ul{
+    header ul {
         justify-content: space-between;
         gap: 2rem 1rem;
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    .date{
+    .date {
         display: none;
     }
 }

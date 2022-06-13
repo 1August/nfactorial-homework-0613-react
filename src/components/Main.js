@@ -1,11 +1,11 @@
-import {clouds, fox, mountains, person, water} from './Images'
-
 import css from '../static/css/main.module.css'
+
+import {clouds, fox, mountains, person, water} from './Images'
 
 const Main = () => {
     return (
         <main>
-            <div className={css.container + "container-fluid"}>
+            <div className={'container-fluid'}>
                 <div className={css.gallery}>
                     <div className={css.img}>
                         <img src={mountains} alt="Photo"/>

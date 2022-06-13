@@ -1,20 +1,20 @@
 import useState from 'react-usestateref'
 import {useEffect} from "react"
 
-import { format } from 'date-fns'
+import {format} from 'date-fns'
 
-import logo from '../static/img/networkLogo.png'
 import css from '../static/css/header.module.css'
+import logo from '../static/img/networkLogo.png'
 
 const Header = () => {
     const [date, setDate, refDate] = useState(new Date())
 
     useEffect(() => {
         const date = format(new Date(), 'HH:mm - dd.MM.yyyy')
-        setDate(''+ date)
+        setDate('' + date)
     }, [])
 
-    return(
+    return (
         <header>
             <div className={css.container + ' container'}>
                 <div className={css.brand}>
@@ -33,7 +33,7 @@ const Header = () => {
                     </nav>
                 </div>
                 <div className={css.date}>
-                    <h2>{ '' + refDate.current }</h2>
+                    <h2>{'' + refDate.current}</h2>
                 </div>
             </div>
         </header>

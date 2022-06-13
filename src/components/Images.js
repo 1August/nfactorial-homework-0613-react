@@ -8,4 +8,4 @@ const Images = () => {
 
 }
 
-export { clouds, fox, mountains, person, water }
+export {clouds, fox, mountains, person, water}

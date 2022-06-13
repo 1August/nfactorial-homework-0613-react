@@ -2,27 +2,23 @@
     display: none;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow: hidden;
 }
 
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
-.container-fluid{
-
-}
-
-img{
+img {
     width: 100%;
 }
 
-.active{
+.active {
     font-weight: 900;
 }
